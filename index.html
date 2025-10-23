@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="wallpaper"></div>
+        
+        <div class="taskbar">
+            <div class="taskbar-left">
+                <button class="start-button" id="startBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="3" y="3" width="8" height="8" rx="1"/>
+                        <rect x="13" y="3" width="8" height="8" rx="1"/>
+                        <rect x="3" y="13" width="8" height="8" rx="1"/>
+                        <rect x="13" y="13" width="8" height="8" rx="1"/>
+                    </svg>
+                </button>
+                <div class="taskbar-apps">
+                    <button class="taskbar-app">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 3H3C1.9 3 1 3.9 1 5v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/>
+                            <path d="M11 15h2v2h-2zm0-8h2v6h-2z"/>
+                        </svg>
+                    </button>
+                    <button class="taskbar-app">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="taskbar-right">
+                <div class="system-tray">
+                    <button class="tray-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                    </button>
+                    <button class="tray-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="datetime">
+                    <div class="time" id="time">12:00 PM</div>
+                    <div class="date" id="date">10/23/2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-menu" id="startMenu">
+            <div class="start-menu-header">
+                <input type="text" class="search-box" placeholder="Search">
+            </div>
+            <div class="start-menu-content">
+                <div class="pinned-section">
+                    <h3>Pinned</h3>
+                    <div class="pinned-apps">
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                </svg>
+                            </div>
+                            <span>Settings</span>
+                        </button>
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10z"/>
+                                </svg>
+                            </div>
+                            <span>Browser</span>
+                        </button>
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+                                </svg>
+                            </div>
+                            <span>Files</span>
+                        </button>
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/>
+                                </svg>
+                            </div>
+                            <span>Store</span>
+                        </button>
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84z"/>
+                                    <circle cx="17.5" cy="17.5" r="4.5"/>
+                                    <path d="M3 13.5h8v8H3z"/>
+                                </svg>
+                            </div>
+                            <span>Photos</span>
+                        </button>
+                        <button class="app-tile">
+                            <div class="app-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                    <polygon points="10 16.5 6 12.5 7.41 11.09 10 13.67 16.59 7.08 18 8.5"/>
+                                </svg>
+                            </div>
+                            <span>Calendar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="start-menu-footer">
+                <button class="user-profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                    <span>User</span>
+                </button>
+                <button class="power-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
